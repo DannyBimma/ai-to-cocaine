@@ -5,7 +5,7 @@
 #define BUFFER_SIZE 4096 // Round about 40kb should do
 #define TARGET_STRING "AI"
 #define REPLACEMENT_STRING "cocaine"
-#define OUTPUT_FILE "the_cocaine_file.txt
+#define OUTPUT_FILE "the_cocaine_file.txt"
 
 // Prototypes
 char* ai_cocainizer(const char* input, const char* search_term, const char* replace_term);
@@ -33,6 +33,7 @@ int main(void) {
 
         fprintf(output_file, "%s", replaced_text);
         free(replaced_text);
+        replaced_text = NULL; // Avoid use-after-free
     }
 
     fclose(output_file);
