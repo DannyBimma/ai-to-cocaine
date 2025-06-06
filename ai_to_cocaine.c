@@ -33,6 +33,12 @@ int main(void) {
 
         fprintf(output_file, "%s", replaced_text);
         free(replaced_text);
+    }
+
+    fclose(output_file);
+
+    printf("AI powered cocaine farming complete! Output saved to '%s'\n", OUTPUT_FILE);
+    return 0;
 }
 
 // Find and replace func
