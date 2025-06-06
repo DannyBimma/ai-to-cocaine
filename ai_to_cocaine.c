@@ -18,3 +18,17 @@ int main(void) {
         return 69;
     }
 }
+
+// Find and replace func
+char* ai_cocainizer(const char* input, const char* search_term, const char* replace_term) {
+    char* result;
+    char* temp;
+    char* pos;
+    int search_len = strlen(search_term);
+    int replace_len = strlen(replace_term);
+    int count = 0;
+    int result_len;
+    int i, j;
+
+    // First pass: calc mem needed
+}
