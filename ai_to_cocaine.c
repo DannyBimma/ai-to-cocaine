@@ -20,6 +20,16 @@ int main(void) {
         fprintf(stderr, "FAILED SUCCESSFULLY: Could not create output!\n");
         return 69;
     }
+
+    // Read stdin input
+    while (fgets(buffer, sizeof(buffer), stdin) != NULL) {
+        /* Replace occurrences in the current line */
+        replaced_text = ai_cocainizer(buffer, TARGET_STRING, REPLACEMENT_STRING);
+
+        if (replaced_text == NULL) {
+            fclose(output_file);
+            return 1;
+        }
 }
 
 // Find and replace func
