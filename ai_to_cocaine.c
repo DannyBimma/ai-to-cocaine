@@ -60,4 +60,7 @@ char* ai_cocainizer(const char* input, const char* search_term, const char* repl
             j++;
         }
     }
+
+    result[j] = '\0';  // Be safe
+    return result;
 }
