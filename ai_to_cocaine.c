@@ -34,6 +34,14 @@ char* ai_cocainizer(const char* input, const char* search_term, const char* repl
     temp = (char*)input;
     while ((pos = strstr(temp, search_term)) != NULL) {
         count++;
-        temp = pos + search_len;  // Move the needle
+        temp = pos + search_len;
+    }
+
+    result_len = strlen(input) + count * (replace_len - search_len);
+
+    result = (char*)malloc(result_len + 1);
+    if (result == NULL) {
+        fprintf(stderr, "Memory allocation failed\n");
+        return NULL;
     }
 }
