@@ -7,6 +7,9 @@
 #define REPLACEMENT_STRING "cocaine"
 #define OUTPUT_FILE "the_cocaine_file.txt
 
+// Prototypes
+char* ai_cocainizer(const char* input, const char* search_term, const char* replace_term);
+
 int main(void) {
     char buffer[BUFFER_SIZE];
     char* replaced_text;
