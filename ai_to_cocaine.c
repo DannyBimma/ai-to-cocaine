@@ -31,4 +31,9 @@ char* ai_cocainizer(const char* input, const char* search_term, const char* repl
     int i, j;
 
     // First pass: calc mem needed
+    temp = (char*)input;
+    while ((pos = strstr(temp, search_term)) != NULL) {
+        count++;
+        temp = pos + search_len;  // Move the needle
+    }
 }
