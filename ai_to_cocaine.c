@@ -30,6 +30,9 @@ int main(void) {
             fclose(output_file);
             return 1;
         }
+
+        fprintf(output_file, "%s", replaced_text);
+        free(replaced_text);
 }
 
 // Find and replace func
