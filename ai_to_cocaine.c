@@ -44,4 +44,20 @@ char* ai_cocainizer(const char* input, const char* search_term, const char* repl
         fprintf(stderr, "Memory allocation failed\n");
         return NULL;
     }
+
+    // Second pass: turn the AI into cocaine
+    i = 0;  // Input
+    j = 0;  // Output
+
+    while (input[i] != '\0') {
+        if (strncmp(&input[i], search_term, search_len) == 0) {
+            strcpy(&result[j], replace_term);
+            j += replace_len;
+            i += search_len;  // Skip search term in input
+        } else {
+            result[j] = input[i];
+            i++;
+            j++;
+        }
+    }
 }
