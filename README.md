@@ -1,6 +1,8 @@
 # AI to Cocaine Text Processor
 
-A simple and efficient C program that reads text from standard input, replaces all occurrences of "AI" with "cocaine", and saves the result to a text file.
+Have you ever been reading yet another AI article, but desperately found yourself wishing it was all about cocaine instead? According to the r/ProgrammerHumor subreddit, you are not alone!! This a simple and efficient C program that reads text from standard input, replaces all occurrences of "AI" with "cocaine", and saves the result to a text file.
+
+![Cocaine meme](https://scontent-ams4-1.cdninstagram.com/v/t51.2885-15/504006890_17916168687099317_7891265429953077634_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE2NHg3MDguc2RyLmY3NTc2MS5kZWZhdWx0X2ltYWdlIn0&_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFQxFu5d9hiF72VoklMaZ2FAz72UhwISEIKOAP3HcdcOvzwyivV1sv6Vn96U5tibAIZbloOu8AiG2DtkqPYVYUT&_nc_ohc=hF8SGmFTQxsQ7kNvwHC8q2y&_nc_gid=0YiVmFZ0o8GiKHlPSzeWuA&edm=AA3DLpEBAAAA&ccb=7-5&ig_cache_key=MzY0OTI2NTg2NzQxNTczNjk5Mg%3D%3D.3-ccb7-5&oh=00_AfNH1biQRHt_EjWPxIALzvgXlbJAfv6Xig_KoJL9QdBe0w&oe=68496D50&_nc_sid=d92198)
 
 ## Features
 
