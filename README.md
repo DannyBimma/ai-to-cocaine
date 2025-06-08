@@ -12,14 +12,15 @@ To pen an article or leaked internal memo suggesting that AI will produce either
 
 - **Memory-efficient**: Processes text stream line-by-line instead of loading entire file into memory
 - **No memory leaks**: Proper memory management with every malloc being freed (I think)
-- **C90/C89 compliant**: White Book C friendly
-- **Error handling**: Graceful handling of memory allocation and file operation failures
+- **C90/C89 standard**: Follows the guidance of Ritchie and Kernighan
+- **Error handling**: Exit code Easter-egg, handling of memory allocation and file operation failures
 - **Cross-platform**: Works on my machine and hopefully yours as well
 
-## Requirements
+## Sys Requirements
 
-- C compiler (CC, GCC, Clang, or Microsoft Visual C++)
+- C compiler (GCC, Clang, or Microsoft Visual C++)
 - Standard C library
+- A sense of humour
 
 ## Compilation
 
@@ -30,7 +31,7 @@ gcc -o ai_to_cocaine ai_to_cocaine.c
 
 ### Windows (using GCC/MinGW):
 ```bash
-gcc -o ai_to_cocaine.exe findreplace.c
+gcc -o ai_to_cocaine.exe ai_to_cocaine.c
 ```
 
 ### Windows (using Visual Studio):
@@ -40,7 +41,8 @@ cl ai_to_cocaine.c
 
 ## Usage
 
-The program reads text from standard input (stdin) and writes the processed output to `the_cocaine_file.txt`.
+The program reads text from standard input (stdin) and writes the modified output to:
+`the_cocaine_file.txt`
 
 ### Basic Usage Examples
 
