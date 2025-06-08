@@ -129,7 +129,7 @@ This approach minimises memory allocation overhead compared to dynamic string bu
 
 ## Customisation
 
-### Changing Search/Replace Terms
+### Changing Search/Target Terms
 
 Edit the constants at the top of the source file:
 ```c
@@ -155,21 +155,21 @@ For very long lines, increase the buffer size:
 
 The program handles several error conditions:
 
-- **Memory allocation failure**: Exits gracefully with error code 1
-- **File creation failure**: Reports error and exits with error code 69
+- **Memory allocation failure**: Exits with error code 1
+- **File creation failure**: Reports error and exits with error code 69 (the Easter-egg!!)
 - **Resource cleanup**: Ensures files are closed and memory is freed even on errors
 
 ## Limitations
 
 - **Line length**: Limited by `BUFFER_SIZE` (default 4KB per line)
 - **Case sensitivity**: Searches are case-sensitive ("AI" vs "ai")
-- **Whole word matching**: Replaces partial matches ("SAIL" becomes "cutie-piesSIL")
-- **Fixed terms**: Search and replace terms are compile-time constants
+- **Full word matching**: Replaces partial matches found within other words ("SAIL" becomes "ScocaineL")
+- **Fixed terms**: Target and replacement terms are compile-time constants
 
 ## Potential Enhancements
 
 ### For Learning Projects:
-1. **Command-line arguments**: Accept search/replace terms as program arguments
+1. **Command-line arguments**: Accept target/replacement terms as command line arguments
 2. **Case-insensitive matching**: Add option for case-insensitive replacement
 3. **Whole word matching**: Only replace complete words, not partial matches
 4. **Multiple file support**: Process multiple input files
