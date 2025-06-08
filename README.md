@@ -78,7 +78,7 @@ are investing in AI technology.
 **Output (saved to output.txt):**
 ```
 The cocaine revolution is here! As cocaine systems are 
-becoming more sophisticated, many companies 
+becoming more sophisticated, many tech companies 
 are investing in cocaine technology.
 ```
 
