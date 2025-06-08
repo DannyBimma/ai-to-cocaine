@@ -46,17 +46,17 @@ The program reads text from standard input (stdin) and writes the modified outpu
 
 ### Basic Usage Examples
 
-**Process a text file:**
+**Modify a text file:**
 ```bash
 cat input.txt | ./ai_to_cocaine
 ```
 
-**Process text from echo:**
+**Modify text from echo:**
 ```bash
 echo "AI is amazing and AI helps everyone" | ./ai_to_cocaine
 ```
 
-**Process text from another command:**
+**Modify text from another command:**
 ```bash
 curl -s https://example.com/text.txt | ./ai_to_cocaine
 ```
@@ -70,16 +70,16 @@ type input.txt | ai_to_cocaine.exe
 
 **Input:**
 ```
-The AI revolution is here.
-AI systems are becoming more sophisticated.
-Many companies are investing in AI technology.
+The AI revolution is here! As AI systems are 
+becoming more sophisticated, many tech companies 
+are investing in AI technology.
 ```
 
 **Output (saved to output.txt):**
 ```
-The cocaine revolution is here.
-cocaine systems are becoming more sophisticated.
-Many companies are investing in cocaine technology.
+The cocaine revolution is here! As cocaine systems are 
+becoming more sophisticated, many companies 
+are investing in cocaine technology.
 ```
 
 ## Program Architecture
