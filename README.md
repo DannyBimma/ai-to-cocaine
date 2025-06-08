@@ -88,23 +88,22 @@ are investing in cocaine technology.
 
 The program uses a **two-pass replacement algorithm** for optimal memory efficiency:
 
-1. **First Pass**: Counts occurrences of the search term to calculate exact memory requirements
-2. **Second Pass**: Builds the result string with replacements
+1. **First Pass**: Counts occurrences of the target-term (AI) to calculate the exact memory requirements
+2. **Second Pass**: Builds the output string with replacements
 
-This approach minimizes memory allocation overhead compared to dynamic string building.
+This approach minimises memory allocation overhead compared to dynamic string building.
 
 ### Memory Management
 
 - **Line-by-line processing**: Only one line is held in memory at a time
-- **Precise allocation**: Calculates exact memory needed for each replacement
-- **Immediate cleanup**: Frees memory after processing each line
+- **Immediate cleanup**: Frees memory after processing each line, and accounts for use-after-free even if this program will never run into that particular problem
 - **Error-safe**: Cleans up resources even when errors occur
 
 ### File Operations
 
-- **Streaming input**: Reads from stdin using `fgets()` for efficient large file handling
+- **Streaming input**: Reads from stdin using `fgets()` for efficient large file processing
 - **Buffered output**: Writes to file using `fprintf()` with automatic buffering
-- **Error handling**: Checks for file creation failures and reports errors appropriately
+- **Error handling**: Checks for file creation failures and reports errors if(any)
 
 ## Code Structure
 
@@ -112,14 +111,14 @@ This approach minimizes memory allocation overhead compared to dynamic string bu
 ```c
 #define BUFFER_SIZE 4096        // Input buffer size (4KB)
 #define TARGET_STRING "AI"        // Text to find
-#define REPLACEMENT_STRING "cutie-pies"  // Replacement text
+#define REPLACEMENT_STRING "cocaine-to-ai"  // Replacement text
 #define OUTPUT_FILE "output.txt"  // Output file name
 ```
 
 ### Key Functions
 
 **`ai_cocainizer()`**
-- Takes input string, search term, and replacement term
+- Takes input string, target string, and replacement term
 - Returns dynamically allocated string with replacements
 - Handles memory allocation and string building
 
@@ -128,7 +127,7 @@ This approach minimizes memory allocation overhead compared to dynamic string bu
 - Processes text line by line
 - Handles error conditions and cleanup
 
-## Customization
+## Customisation
 
 ### Changing Search/Replace Terms
 
