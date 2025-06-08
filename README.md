@@ -1,13 +1,17 @@
-# AI to Cocaine Text Processor
+# AI to Cocaine
 
-Have you ever been reading yet another AI article, but desperately found yourself wishing it was all about cocaine instead? According to the r/ProgrammerHumor subreddit, you are not alone!! This a simple and efficient C program that reads text from standard input, replaces all occurrences of "AI" with "cocaine", and saves the result to a text file.
+Have you ever been reading yet another article about AI, but desperately found yourself wishing it was all about cocaine instead? According to a post on the r/ProgrammerHumor subreddit, you are not alone!! This is a simple and efficient C program that reads text from standard input, replaces all occurrences of "AI" with "cocaine", and saves the result to a text file.
+
+The ai_to_cocaine program was created partly as a meme, but mostly to highlight the ridiculous nature of the claims, warnings, and predictions being made by overly bullish leaders in the industry. It is my personal belief that AI has a staunch place in the future of humanity, but it shall not wholely define it.
+
+To pen an article or leaked internal memo suggesting that AI will produce either a utopia or a distopia for developers and humanity at large in the coming decade, sounds as ridiculous as the cocaine-laced output from this program... and therein lays it's use case 😉 
 
 ![Cocaine meme](https://scontent-ams4-1.cdninstagram.com/v/t51.2885-15/504006890_17916168687099317_7891265429953077634_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InRocmVhZHMuRkVFRC5pbWFnZV91cmxnZW4uMTE2NHg3MDguc2RyLmY3NTc2MS5kZWZhdWx0X2ltYWdlIn0&_nc_ht=scontent-ams4-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2QFQxFu5d9hiF72VoklMaZ2FAz72UhwISEIKOAP3HcdcOvzwyivV1sv6Vn96U5tibAIZbloOu8AiG2DtkqPYVYUT&_nc_ohc=hF8SGmFTQxsQ7kNvwHC8q2y&_nc_gid=0YiVmFZ0o8GiKHlPSzeWuA&edm=AA3DLpEBAAAA&ccb=7-5&ig_cache_key=MzY0OTI2NTg2NzQxNTczNjk5Mg%3D%3D.3-ccb7-5&oh=00_AfNH1biQRHt_EjWPxIALzvgXlbJAfv6Xig_KoJL9QdBe0w&oe=68496D50&_nc_sid=d92198)
 
 ## Features
 
-- **Memory efficient**: Processes text line-by-line instead of loading entire file into memory
-- **No memory leaks**: Proper memory management with malloc/free (I think)
+- **Memory-efficient**: Processes text stream line-by-line instead of loading entire file into memory
+- **No memory leaks**: Proper memory management with every malloc being freed (I think)
 - **C90/C89 compliant**: White Book C friendly
 - **Error handling**: Graceful handling of memory allocation and file operation failures
 - **Cross-platform**: Works on my machine and hopefully yours as well
