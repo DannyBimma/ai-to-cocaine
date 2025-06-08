@@ -204,23 +204,13 @@ This project demonstrates several important C programming concepts:
 ### File I/O
 - Reading from standard input with `fgets()`
 - Writing to files with `fprintf()`
-- File handle management with `fopen()`/`fclose()`
+- File management with `fopen()`/`fclose()`
 - Error handling for file operations
-
-### Software Engineering
-- Separation of concerns (separate functions for different tasks)
-- Const correctness in function parameters
-- Meaningful constants instead of magic numbers
-- Comprehensive error handling and resource cleanup
 
 ## License
 
-This project is provided partially as educational material, but it was mostly done for the lolz. Feel free to use, modify, and distribute for learning and or shitposting purposes.
+This project is provided partially as educational material, but it was mostly done to prove a point for the lolz. Feel free to use, modify, and distribute for learning and or shitposting purposes.
 
 ## Contributing
 
-This is a learning project, but suggestions for educational or basic life improvements are welcome:
-- Better error messages
-- Additional comments for clarity
-- More comprehensive test cases
-- Performance optimizations that maintain readability
+This is a learning project, but suggestions for educational or basic life improvements are welcome 🙂
